@@ -1,0 +1,106 @@
+*:root{
+  --darkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --veryblue: hsl(212, 21%, 14%);
+  --darkgrey: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-size: 15pt;
+    background: var(--cream);
+    font-family: sans-serif;
+}
+.img_desktop{
+  width: 50%;
+}
+.img_mobile{
+  display: none;
+}
+.parent{
+  background: white;
+  width: 60%;
+  height: auto;
+  margin: 35px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+.child{
+  padding: 27px;
+  flex-basis: 50%;
+  
+}
+.child .p1{
+  color: var(--darkgrey);
+  font-size: 13px;
+  letter-spacing: 5px;
+}
+.child h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 30px;
+}
+.child .p2{
+  color: var(--darkgrey);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.child h3{
+  display: inline-block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 37px;
+  color:var(--darkcyan);
+  margin-top: 3px;
+}
+.child del{
+  color: var(--darkgrey);
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.child button{
+  display: block;
+  background: var(--darkcyan);
+  border: none;
+  width: 100%;
+  margin-top: 12.5px;
+  padding: 15px;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.child button:hover{
+  background: var(--veryblue)
+}
+.child svg{
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 420px) {
+  .parent{
+  background: white;
+  width: 90%;
+  margin: 35px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+.img_mobile{
+  width: 100%;
+  display: block;
+}
+.img_desktop{
+  display: none;
+}
+.child{
+  padding: 27px;
+}
+}
